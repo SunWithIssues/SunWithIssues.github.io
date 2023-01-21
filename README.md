@@ -6,4 +6,7 @@ Link: https://sunwithissues.github.io/
 # Current Tests
   - Angular + D3
   - Jekyll
-  - Multipage Sites w/ GH Pages
+  
+# Past Tests
+  - Multipage Sites w/ GH Pages (1/21/2023)
+    - Honestly, it works as expected. Directories act as directory for the url, and html file names act as pages.
