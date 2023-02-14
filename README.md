@@ -7,6 +7,7 @@ Link: https://sunwithissues.github.io/
   - Angular + D3
   - Dash Plotly
   - Flask
+  - Svelte
   - Jekyll
   
 # Past Tests

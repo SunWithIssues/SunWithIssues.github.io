@@ -7,7 +7,15 @@ let dataset = [
     {item: "orange", amount: 65, price: 0.99}
 ];
 
-let keys = Object.keys(dataset[0])
+// let path = "https://raw.githubusercontent.com/SunWithIssues/SunWithIssues.github.io/main/data/sample-art-info-artic.csv";
+// let dataset = []
+// d3.csv(path, function(data){
+//     // let v = {id: data.id, title: data.title, color: data.color};
+//     dataset.push(data);
+// });
+
+
+let cols = Object.keys(dataset[0]);
 
 let width = 800;
 let height = 400;
@@ -18,8 +26,8 @@ let margin = {
     right: 50
 };
 
-let independent_var = keys[0];
-let dependent_var = "amount";
+let independent_var = cols[0];
+let dependent_var = cols[1];
 
 let dropdown = d3.select("#dropdown-variables") 
     .append("select")
@@ -28,7 +36,7 @@ let dropdown = d3.select("#dropdown-variables")
     .attr("name", "variable-list");
 
 let options = dropdown.selectAll("options")
-    .data(keys)
+    .data(cols)
     .enter()
     .append("option");
 
